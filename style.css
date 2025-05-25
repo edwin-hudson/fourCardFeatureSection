@@ -10,6 +10,7 @@
 
 --Grey_500: hsl(234, 12%, 34%);
 --Grey_400: hsl(212, 6%, 44%);
+--Grey_200: hsl(212, 6%, 88%);
 --White: hsl(0, 0%, 100%);
 
 /* Typography */
@@ -21,6 +22,66 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: var(--White);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.125rem;
+    padding: 1.25rem;
+    width: 30%;
+}
+
+header h3 {
+    color: var(--Grey_400);
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 0.2rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: var(--Grey_500);
+}
+
+header p {
+    font-size: 0.65rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    color: var(--Grey_500);
+}
+
+article {
+    display: grid;
+    gap: 2rem;
+    max-width: 75rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    max-width: 23.75rem;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0px 8px 16px var(--Grey_200);
+}
